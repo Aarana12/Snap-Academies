@@ -34,7 +34,8 @@ nav.horizontal a:active {
 /* Main Styles */
 
 body > header > div > img {
-    filter: brightness(50%); 
+    filter: brightness(50%);
+    height: auto;
 }
 
 body > header > div > p {
