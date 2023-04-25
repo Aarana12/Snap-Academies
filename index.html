@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+    Main Page
+-->
+<meta charset="utf-8">
+<title>Ariya Thai Kitchen</title>
+<meta name="viewport" content="width=device-width, intitial-scale=1.0">
+<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="layout.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="horizontal flex"> 
+            <img src="image.png" alt="">
+            <ul>
+                <li><a href="index.html#main">About</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img class= "mainPic" src="pad thai.png" alt="">
+            <p>Ariya Thai Kitchen</p>
+            
+        </div>
+        
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <div class="main-text">
+                <h1> About Us</h1>
+                <p> For more than 10 years, Ariya Thai Kitchen has been providing the people of
+                    Huntington Park incredible, flavorful Thai food. Since the moment the doors
+                    opened to today, Ariya has focused on providing fresh food in the most cleanest 
+                    of environments as proven with our A grade from the Health Department.
+                </p>
+                <span id="dots" style="display:none"></span><span id="more" style="display:none">
+                    
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. 
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, 
+                    sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+                    Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+
+                    <br>
+                    <br>
+
+                    A condimentum vitae sapien pellentesque habitant morbi. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. 
+                    Proin sagittis nisl rhoncus mattis. Pretium viverra suspendisse potenti nullam ac tortor. Suspendisse sed nisi lacus sed viverra tellus in. Massa tempor nec feugiat nisl pretium. 
+                    Sit amet porttitor eget dolor morbi. Aliquam ut porttitor leo a diam. In est ante in nibh mauris cursus mattis. 
+                    Bibendum ut tristique et egestas quis ipsum suspendisse. Dictum varius duis at consectetur lorem. Odio euismod lacinia at quis risus.
+                
+                </span>
+                    <br>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+    <hr class="line">
+
+    <section id="menu">
+        <div class="menu">
+            <h1>Menu</h1>
+            <div class="row"> 
+                <div class="column">
+                    <div class="food"> 
+                        <img src="appetizer.png" alt="">
+                        <div class="caption">
+                        <p class="description">Appetizers</p></div>
+                    </div>
+                    <div class="food">
+                        <img src="soup.png">
+                        <div class="caption">
+                        <p class="description">Soup</p></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="food">
+                        <img src="noodles.jpg">
+                        <div class="caption">
+                        <p class="description">Noodles</p></div>
+                    </div>
+                    <div class="food">
+                        <img src="Menu .png">
+                        <div class="caption">
+                            <p class="description">Fried Rice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="vertical-center">
+                    <button><a href="http://places.singleplatform.com/ariya-thai-kitchen/menu?ref=google">See Full Menu ></a></button>
+                </div>
+            </div>
+    </section>
+
+    <hr class="line">
+
+    <section id="contact">
+        <div class="grid">
+            <div class="hours">
+                <h1>Opening Hours</h1>
+                    <div class="days">
+                        <h3> Monday</h3>
+                        <p>11 am till 9 pm</p>
+                        <h3> Tuesday </h3>
+                        <p>Closed</p>
+                        <h3> Wednesday </h3>
+                        <p>Closed</p>
+                        <h3> Thursday </h3>
+                        <p>11 am till 9 pm</p>
+                        <h3> Friday </h3>
+                        <p>11 am till 10 pm</p>
+                        <h3> Saturday </h3>
+                        <p>11 am till 10 pm</p>
+                        <h3> Sunday </h3>
+                        <p>11 am till 9 pm</p>
+                </div>
+            </div>
+            <div class="Contact-Us">
+                <h1>Address</h1>
+                <p >2560 E Gage Ave Huntington Park CA 90255</p>
+
+                <h1>Contact Us</h1>
+                <p>(323) 589 -1245</p>
+                <p>ariyathaikitchen999@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <div> 
+    <button class="top-button" style="position: absolute; top: 401%; right: 100px;"><a href="index.html">Back to Top</a></button>
+    </div>
+
+    <footer> 
+        <!-- <p>Copyright @ 2023 Ariya Thai Kitchen</p> -->
+        <p>*This is not the official website of Ariya Thai Kitchen*</p>
+        <p>Designed by Areli Arana</p>
+    </footer>
+</body>
+</html>
