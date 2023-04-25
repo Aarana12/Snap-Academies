@@ -144,6 +144,8 @@
                         <p>11 am till 10 pm</p>
                         <h3> Sunday </h3>
                         <p>11 am till 9 pm</p>
+
+                    <div id="display"></div>
                 </div>
             </div>
             <div class="Contact-Us">
@@ -157,8 +159,25 @@
         </div>
     </section>
 
+    <script>
+        var today = new Date();
+        console.log(today);
+        let open = "We're Open!";
+        let closed = "We're Closed.";
+        var display = document.getElementById('display');
+
+        if (today.getHours() >= 11 && today.getHours() < 21 && today.getDay() === 0 && today.getDay() === 1 && today.getDay() === 4) {
+            display.innerHTML = open;
+        } else if (today.getHours() >= 11 && today.getHours() < 22 && today.getDay() === 5 && today.getDay() === 6) {
+            display.innerHTML = open;
+        }
+        else {
+            display.innerHTML = closed;
+        }
+    </script>
+
     <div> 
-    <button class="top-button" style="position: absolute; top: 401%; right: 100px;"><a href="index.html">Back to Top</a></button>
+    <button class="top-button" style="position: sticky;"><a href="index.html">Back to Top</a></button>
     </div>
 
     <footer> 

@@ -174,3 +174,9 @@ button {
     padding: 10px;
     font-size: large;
   }
+
+  #display {
+    font-size: larger;
+    padding: 30px;
+    text-align: center;
+  }
